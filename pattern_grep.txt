@@ -9,8 +9,8 @@
 \b(wp_remote_get)\(
 href=['"]\{\$\w+\s*\}['"]
 \b(echo|print|printf|sprintf|die|wp_die)\s*\(
-(?:\$_(?:GET|POST|REQUEST|COOKIE)|\$_SERVER\['(?:REQUEST_URI|PHP_SELF|HTTP_REFERER)'\]|(?:add_query_arg|remove_query_arg)\s*\()
 value="
+(?:\$_(?:GET|POST|REQUEST|COOKIE)|\$_SERVER\['(?:REQUEST_URI|PHP_SELF|HTTP_REFERER)'\]|(?:add_query_arg|remove_query_arg)\s*\()
 (?<!prepare)\(('|")SELECT.+FROM.+('|").*\..* 
 \$\w+\s*=\s*isset\(\s*\$_GET\['\w+'\]\s*\)\s*\?\s*\$_GET\['\w+'\]\s*:\s*["']["'];
 unzip_file\(
