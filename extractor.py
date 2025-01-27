@@ -17,7 +17,7 @@ os.chdir("extracted_plugins")
 # Extract 3 random plugin names from plugin.txt
 with open("../plugin.txt", "r") as file:
     plugin_names = file.readlines()
-    selected_plugins = random.sample(plugin_names, 3000)
+    selected_plugins = random.sample(plugin_names, 1467)
 
 # Read each plugin name
 for plugin_name in selected_plugins:
