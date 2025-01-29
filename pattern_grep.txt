@@ -9,6 +9,7 @@
 \b(wp_remote_get)\(
 href=['"]\{\$\w+\s*\}['"]
 \b(echo|print|printf|sprintf|die|wp_die)\s*\(
+do_shortcode\(
 sanitize_text_field\(
 value="'\s*\.\s*\$(?:_REQUEST|_GET|_POST|_COOKIE|_SERVER|_FILES|_ENV|_SESSION)\['[^']+'\]\s*\.\s*'"
 value="
