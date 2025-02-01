@@ -9,6 +9,7 @@
 \b(wp_remote_get)\(
 href=['"]\{\$\w+\s*\}['"]
 \b(echo|print|printf|sprintf|die|wp_die)\s*\(
+\$_(GET|POST|REQUEST|COOKIE)\[['"]?([a-zA-Z0-9_-]+)['"]?\]
 \b(echo|print|printf|sprintf|die|wp_die)\s*\(
 do_shortcode\(
 sanitize_text_field\(
