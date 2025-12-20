@@ -1,17 +1,13 @@
 {
-    "type": "page",
-    "page_template": "elementor_header_footer",
-    "title": "SSRF Test Page",
-    "content": "This page was created via SSRF",
-    "server_info": {
-        "timestamp": "2024-01-01T12:00:00Z",
-        "method": "GET",
-        "headers": {
-            "user-agent": "{{USER_AGENT}}",
-            "host": "{{HOST}}",
-            "x-forwarded-for": "{{CLIENT_IP}}"
-        },
-        "query_string": "{{QUERY_STRING}}"
-    },
-    "vulnerability_test": "SSRF_PoC_Successful"
+  "type": "page",
+  "content": [
+    {
+      "id": "xss",
+      "elType": "widget",
+      "widgetType": "html",
+      "settings": {
+        "html": "<script>alert(document.domain)</script>"
+      }
+    }
+  ]
 }
